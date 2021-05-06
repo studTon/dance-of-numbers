@@ -10,4 +10,4 @@
 ## License
 * Published under GPL v3.0. See [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) for more information.
 ## Contact
-* [Project link](https://github.com/users/studTon/projects/2)
+* [Project link](https://github.com/studTon/dance-of-numbers/projects/1)
