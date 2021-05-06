@@ -7,6 +7,7 @@
 * You will not need to install the game, just run the executable and a directory for game files will appear.
 ## Contribution
 * Feel free to suggest pull requests or fork this repo. Any idea to improve this game is welcome.
+* Check the [Contribution guideline](https://github.com/studTon/dance-of-numbers/blob/main/docs/CONTRIBUTING.md)
 ## License
 * Published under GPL v3.0. See [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) for more information.
 ## Contact
