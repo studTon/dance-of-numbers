@@ -1,10 +1,10 @@
 # Dance of numbers
 
 ## About the project
-* Dance of numbers is a simple guess number game for console Windows.
+* Dance of numbers is a simple guess number game for command line interface.
 ## Getting started
-* You will need a computer running Windows 7 at least.
-* You will not need to install the game, just run the executable and a directory for game files will appear.
+* Project currently in development.
+* You will not need to install the game, just run the executable script with necessary files.
 ## Contribution
 * Feel free to suggest pull requests or fork this repo. Any idea to improve this game is welcome.
 * Check the [Contribution guideline](https://github.com/studTon/dance-of-numbers/blob/main/docs/CONTRIBUTING.md)
