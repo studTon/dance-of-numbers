@@ -15,7 +15,7 @@ int sort_number(int max_number)
 bool guess(int guess_number)
 {
     /*
-    Receive a number to verify if it's 
+    Receive a number to verify whether it's 
     higher or lower than the sorted number
     */
 }
