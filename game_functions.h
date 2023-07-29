@@ -1,25 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include "game_library.h"
 
-void title_bar(void){
-    int i = 0;
-    while(i < 32){
-        printf("*");
-        i += 1;
-    }
-    printf("\n");
-}
-
-void title(void) {
-    printf("\n\nDANCE OF NUMBERS\n\n");
-}
-
-void menu(void) {
+void menu(void)
+{
     int option = 1;
 
-    while(option != 0) {
-        system("@cls");
+    while (option != 0)
+    {
+        system("clear");
 
         title_bar();
         title();
@@ -34,17 +23,13 @@ void menu(void) {
         {
         case 0:
             break;
-        case 1: {
-            //play game function
-            printf("OK");
+        case 1:
+        {
+            play_game();
             break;
         }
         default:
             break;
         }
-        
     }
-    
-    
 }
-
