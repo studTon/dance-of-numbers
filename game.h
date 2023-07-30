@@ -8,8 +8,7 @@ void menu(void)
 
     while (option != 0)
     {
-        system("clear");
-
+        clear();
         title_bar();
         title();
         title_bar();
@@ -17,18 +16,19 @@ void menu(void)
         printf("\n\nSelect an option:\n\n");
         printf("1 - Play\n");
         printf("0 - Quit\n");
+        printf("\n\n=>");
         scanf("%d", &option);
 
         switch (option)
         {
         case 0:
+        {
+            clear();
             break;
+        }
         case 1:
         {
             play_game();
-            break;
-        }
-        default:
             break;
         }
     }

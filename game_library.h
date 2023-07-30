@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <unistd.h>
+#include <time.h>
+
+void clear()
+{
+    system( "clear" );
+}
 
 void title_bar(void)
 {
@@ -19,72 +24,48 @@ void title(void)
     printf("\n\nDANCE OF NUMBERS\n\n");
 }
 
-int sort_number(int max_number)
+int sort_number(int max, int low)
 {
+    srand(time(NULL) * getpid());
 
-    int r;
-    srand(time(NULL));
-    r = (rand() % max_number) + 1;
+    int sorted = (rand() % (max - low + 1)) + low;
 
-    return r;
+
+
+    return sorted;
 }
 
-int guess(int guess_number, int sorted_number)
+int guess(int guess_number, int the_number)
 {
     /*
     Receive a number to verify whether it's 
-    higher or lower than the sorted number
+    equal or not to sorted number
     */
-    if (guess_number > sorted_number)
+    if (guess_number > the_number)
     {
         printf("Your guess is higher than the secret number...\n\n\n");
         return 2;
     }
-    else if (guess_number < sorted_number)
+    else if (guess_number < the_number)
     {
         printf("Your guess is lesser than the secret number...\n\n\n");
         return 1;
     }
     
-    return 0; /*If 0 then guessed*/
+    return 0; /*Guessed the number*/
     
-}
-
-int define_limit()
-{
-    int number_limit;
-    printf("What is the range of number?(Starting from 0)\n\n");
-    printf("=======>");
-    scanf("%d", &number_limit);
-    return number_limit;
 }
 
 void wait()
 {
-    system("clear");
-    printf("It was a nice game...\n\n\n\n");
-    
-    int option;
-    printf("0 - Exit;\n");
-    printf("1 - Go back to menu;\n");
-    printf("\n\n=======>");
-    scanf("%d", &option);
-    switch (option)
-    {
-    case 0:
-        system("exit");
-    case 1:
-        break; 
-    default:
-        option = 1;
-    }
+    system("sleep 30s");
 }
 
 void play_game()
 {
-    system("clear");
-    int limit = define_limit();
-    int sorted = sort_number(limit);
+
+    clear();
+    int sorted = sort_number(10, 0);
     int number;
     int luck;
 
@@ -96,11 +77,9 @@ void play_game()
         if (luck = 0)
         {
             printf("You won!!!\n\n");
-            break;
         }
-        
+        clear();
     }while(luck != 0);
     
-    sleep(10);
     wait();
 }

@@ -1,13 +1,9 @@
 //This code is free forever :)
-
 #include <stdio.h>
 #include <stdlib.h>
-#include "game_functions.h"
+#include "game.h"
 
-int main(){
+int main(void){
     menu();
-
-    
     return 0;
-
 }
