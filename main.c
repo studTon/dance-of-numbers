@@ -1,9 +1,10 @@
 //This code is free forever :)
 #include <stdio.h>
 #include <stdlib.h>
-#include "game.h"
+#include "library.h"
 
-int main(void){
-    menu();
+int main(int argc, char*argv[]){
+    title();
+    start();
     return 0;
 }
