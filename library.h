@@ -21,6 +21,26 @@ void title(void)
     system("sleep 10s");
 }
 
+int defineSettings(void)
+{
+    int difficulty = 0;
+    system("clear");
+    printf("Which difficulty do you wanna play?\n\n");
+    printf("    0 - Easy\n");
+    printf("    1 - Medium\n");
+    printf("    2 - Hard\n");
+    printf("\n\n    ::");
+    scanf("%d", &difficulty);
+    return difficulty;
+}
+
+void play(int diffOpt)
+{
+    system("clear");
+    printf("\n\nOK\n\n");
+    system("sleep 5s");
+}
+
 void start(void)
 {
 
@@ -39,31 +59,22 @@ void start(void)
         switch (option)
         {
             case 0:
-        {
-            diff = defineSettings();
-        }
-            break;
-        
-        default:
-            break;
+            {
+                diff = defineSettings();
+            }break;
+            case 1: play(diff);break;
+            case 2:
+            {
+                system("clear");
+                printf("        GOING AWAY HAHAHA...\n\n");
+                system("sleep 10s");
+                
+            }break;
         }
     }
     
     system("clear");
 
-    
-
 }
 
-int defineSettings(void)
-{
-    int difficulty = 0;
-    system("clear");
-    printf("Which difficulty do you wanna play?\n\n");
-    printf("    0 - Easy\n");
-    printf("    1 - Medium\n");
-    printf("    2 - Hard\n");
-    printf("\n\n    ::");
-    scanf("%d", &difficulty);
-    return difficulty;
-}
+
