@@ -31,9 +31,24 @@ void start(void)
         printf("    2 - Exit\n");
         printf("    ::");
         scanf("%d", &option);
-    }
 
+        switch (option)
+        {
+            case 0:
+        {
+            defineSettings();
+        }
+            break;
+        
+        default:
+            break;
+        }
+    }
+    
     system("clear");
+
+    
+
 }
 
 void defineSettings(void)
