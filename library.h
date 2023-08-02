@@ -1,3 +1,7 @@
+/*
+    Game Library
+*/
+
 void titleBar(void)
 {
     int i;
@@ -21,7 +25,7 @@ void start(void)
 {
 
     int option = 0;
-
+    int diff = 0;
     while (option != 2)
     {
         system("clear");
@@ -36,7 +40,7 @@ void start(void)
         {
             case 0:
         {
-            defineSettings();
+            diff = defineSettings();
         }
             break;
         
@@ -51,7 +55,15 @@ void start(void)
 
 }
 
-void defineSettings(void)
+int defineSettings(void)
 {
-    
+    int difficulty = 0;
+    system("clear");
+    printf("Which difficulty do you wanna play?\n\n");
+    printf("    0 - Easy\n");
+    printf("    1 - Medium\n");
+    printf("    2 - Hard\n");
+    printf("\n\n    ::");
+    scanf("%d", &difficulty);
+    return difficulty;
 }
