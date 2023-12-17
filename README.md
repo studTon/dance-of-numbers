@@ -2,6 +2,7 @@
 
 ## About the project
 * Dance of numbers is a simple guess number game for command line interface.
+* Game is currently working.
 ## Getting started
 * Project currently in development.
 * You will not need to install the game, just run the executable script with necessary files.
